@@ -1,0 +1,18 @@
+﻿body
+{
+    background: #fff;
+    color: #191919;
+}
+
+a {
+    color: #191919;
+}
+
+.header {
+    background: #222;
+    color: #fff;
+}
+
+    .header a {
+        color:#fff;
+    }
