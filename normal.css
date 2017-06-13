@@ -36,6 +36,10 @@ a {
         color: #fd5900;
     }
 
+.box a {
+    color: #333;
+}
+
 #lightbox_overlay {
     background-color: #000;
 }

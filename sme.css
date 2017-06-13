@@ -12,6 +12,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     font-size: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
 a {
     text-decoration: none;
 }
@@ -168,3 +176,87 @@ body {
     .welcome p a {
         margin-right: 12px;
     }
+
+/*nav*/
+.nav {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    margin-top: 10px;
+    height: 45px;
+    overflow: hidden;
+}
+
+    .nav .first {
+        padding: 0;
+        border: 0;
+    }
+
+    .nav .end {
+        width: auto;
+    }
+
+.box {
+    float: left;
+    width: 151px;
+    padding-left: 23px;
+    border-left: 1px #efefef solid;
+    font-size: 14px;
+}
+
+    .box ul {
+        height: 28px;
+    }
+
+        .box ul li {
+            float: left;
+            width: 50px;
+            line-height: 18px;
+        }
+
+            .box ul li .end {
+                width: auto;
+            }
+
+.ad-top-banner {
+    padding-top: 17px;
+    margin-top: 10px;
+    height: 85px;
+    overflow: hidden;
+    background-image:url(./images/topbanner.jpg);
+}
+
+.top-news {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.top-products {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    height: 650px;
+    overflow: hidden;
+}
+
+
+.news {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.products {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.footer {
+    border-top: 1px #fdd000 solid;
+    padding-top: 17px;
+    height: 150px;
+    overflow: hidden;
+}

@@ -5,4 +5,6 @@ Customize-theme support
 Multiple-browser support
 
 Task: 
-1. Sohu UI - Site navigation
+1. Sohu UI - TOP news
+2. Sohu UI - Channel news
+3. Sohu UI - Footer
