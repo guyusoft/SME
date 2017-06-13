@@ -5,13 +5,6 @@
     -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: 1.667;
-    font-family: "PingFang SC",Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",simsun,sans-serif;
-}
-
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video {
     border: 0;
     margin: 0;
@@ -31,10 +24,17 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: block;
 }
 
+body {
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.667;
+    font-family: "PingFang SC",Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",simsun,sans-serif;
+}
+
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url(/fonts/glyphicons-halflings-regular.eot);
-    src: url(/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(/fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+    src: url(./fonts/glyphicons-halflings-regular.eot);
+    src: url(./fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(./fonts/glyphicons-halflings-regular.woff) format('woff'), url(./fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }
 
 .glyphicon {
@@ -103,6 +103,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .glyphicon-user:before {
     content: "\e008";
+    margin-right: 5px;
 }
 
 .glyphicon-film:before {
@@ -853,27 +854,134 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 30px;
 }
 
-    .header .header-box {
-        font-size: 14px;
-        line-height: 30px;
+.header-box {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.header .span {
+    display: inline-block;
+}
+
+.header .left, .header .right {
+    display: inline;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*The width of content*/
+.area {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.marginright20px {
+    margin-right: 20px;
+}
+
+.marginleft20px {
+    margin-left: 20px;
+}
+
+.content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.logo-search {
+    height: 75px;
+}
+
+.logo {
+    width: 160px;
+    height: 75px;
+    overflow: hidden;
+    line-height: 500px;
+    background: url(./images/logo.jpg) no-repeat 0 0;
+}
+
+.search-wrapper {
+    width: 640px;
+    height: 40px;
+    margin-top: 17px;
+}
+
+.logo-search-text {
+    width: 570px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px #ddd solid;
+    border-right: 0;
+    line-height: 38px;
+    padding-left: 10px;
+    float: left;
+    border-radius: 1px 0 0 1px;
+    box-sizing: border-box;
+}
+
+.logo-search-btn {
+    float: right;
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0 1px 1px 0;
+}
+
+    .logo-search-btn i {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
     }
 
-    .header .area {
-        width: 1180px;
-        margin: 0 auto;
+.search-empty {
+    margin: 14px 0 0 7px;
+    line-height: 24px;
+    width: 115px;
+}
+
+.welcome {
+    border-left: 1px #efefef solid;
+    width: 190px;
+    height: 36px;
+    padding-left: 26px;
+    margin-top: 20px;
+}
+
+    .welcome h4 {
+        font-size: 12px;
+        line-height: 20px;
     }
 
-    .header .span {
-        display: inline-block;
-        float: left;
+.welcome-logo {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    line-height: 500px;
+    float: left;
+    margin-right: 10px;
+    background: url(./images/welcome.png) no-repeat 0 0;
+}
+
+    .welcome-logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 
-    .header .left {
-        float: left;
-        display: inline;
-    }
+.welcome p {
+    line-height: 14px;
+    padding-top: 2px;
+}
 
-    .header .right {
-        float: right;
-        display: inline;
-    }
+.welcome p a {
+    margin-right: 12px;
+}

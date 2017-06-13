@@ -1,5 +1,4 @@
-﻿body
-{
+﻿body {
     background: #fff;
     color: #191919;
 }
@@ -14,5 +13,25 @@ a {
 }
 
     .header a {
-        color:#fff;
+        color: #fff;
+    }
+
+.content-wrapper {
+    background: #fff;
+}
+
+.logo-search-text {
+    color: #999;
+}
+
+.logo-search-btn {
+    background: #fdd000;
+}
+
+.welcome h4 {
+    color: #fd5900;
+}
+
+    .welcome h4 a {
+        color: #fd5900;
     }
