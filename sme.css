@@ -225,29 +225,18 @@ body {
     background-image:url(./images/topbanner.jpg);
 }
 
-.top-news {
+.top-category {
     border-top: 1px #fdd000 solid;
     padding-top: 17px;
-    height: 650px;
     overflow: hidden;
+    margin: 15px auto 0;
 }
 
-.top-products {
-    border-top: 1px #fdd000 solid;
-    padding-top: 17px;
-    height: 650px;
-    overflow: hidden;
-}
+    .top-category .main {
+        width:820px;
+    }
 
-
-.news {
-    border-top: 1px #fdd000 solid;
-    padding-top: 17px;
-    height: 650px;
-    overflow: hidden;
-}
-
-.products {
+.category {
     border-top: 1px #fdd000 solid;
     padding-top: 17px;
     height: 650px;
