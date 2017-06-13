@@ -11,7 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		index.html = index.html
 		jquery-2.2.1.min.js = jquery-2.2.1.min.js
 		normal.css = normal.css
+		readme.txt = readme.txt
 		sme.css = sme.css
+		sme.glyphicon.css = sme.glyphicon.css
+		sme.lightbox.css = sme.lightbox.css
 		test.js = test.js
 	EndProjectSection
 EndProject
