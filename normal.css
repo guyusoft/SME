@@ -35,3 +35,79 @@ a {
     .welcome h4 a {
         color: #fd5900;
     }
+
+#lightbox_overlay {
+    background-color: #000;
+}
+
+#lightbox_content, #lightbox_header, #lightbox_footer_nobuttons {
+    background-color: #fff;
+}
+
+#lightbox_message .warning {
+    color: #ff9400 !important;
+}
+
+#lightbox_footer {
+    background-color: #ccc;
+}
+
+#lightbox_footer_center  .btn-primary {
+    border-color: #357ebd;
+}
+
+#lightbox_footer_center  .btn-primary {
+    color: #ffffff;
+    background-color: #428bca;
+}
+
+#lightbox_footer_center  .btn-primary:hover,
+#lightbox_footer_center  .btn-primary:focus {
+    background-color: #255783;
+}
+
+#lightbox_footer_center  .btn-primary:active,
+#lightbox_footer_center  .btn-primary.active {
+    background-color: #255783;
+    border-color: #357ebd;
+}
+
+#lightbox_footer_center  .btn-link:hover,
+#lightbox_footer_center  .btn-link:focus {
+    color: #255783;
+    background-color: transparent;
+}
+
+#lightbox_footer_center  .btn-primary:hover,
+#lightbox_footer_center  .btn-primary:focus,
+#lightbox_footer_center  .btn-primary:active,
+#lightbox_footer_center  .btn-primary.active,
+#lightbox_footer_center  .open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #255783;
+    border-color: #357ebd;
+}
+
+#lightbox_footer_center  .btn-primary.disabled,
+#lightbox_footer_center  .btn-primary[disabled],
+#lightbox_footer_center  fieldset[disabled] .btn-primary,
+#lightbox_footer_center  .btn-primary.disabled:hover,
+#lightbox_footer_center  .btn-primary[disabled]:hover,
+#lightbox_footer_center  fieldset[disabled] .btn-primary:hover,
+#lightbox_footer_center  .btn-primary.disabled:focus,
+#lightbox_footer_center  .btn-primary[disabled]:focus,
+#lightbox_footer_center  fieldset[disabled] .btn-primary:focus,
+#lightbox_footer_center  .btn-primary.disabled:active,
+#lightbox_footer_center  .btn-primary[disabled]:active,
+#lightbox_footer_center  fieldset[disabled] .btn-primary:active,
+#lightbox_footer_center  .btn-primary.disabled.active,
+#lightbox_footer_center  .btn-primary[disabled].active,
+#lightbox_footer_center  fieldset[disabled] .btn-primary.active {
+    background-color: #4da1cb;
+    border-color: #357ebd;
+}
+
+#lightbox_content {
+    border-color: #fff;
+    background-color: #fff;
+}

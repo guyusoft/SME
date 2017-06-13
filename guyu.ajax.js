@@ -1,3 +1,7 @@
+if (typeof Guyu === "undefined") {
+    Guyu = {};
+}
+
 /**
  * Collection of Promise related features
  */
@@ -30,6 +34,70 @@
         body: {},
         displayError: true,
         prefetchCache: {}
+    };
+
+    $.postJSON = function (url, options, successcallback, context, errorcallback, headers) {
+
+        if (!url) {
+            var defer = $.Deferred();
+            defer.reject('Invalid url');
+            return defer.promise();
+        }
+
+        var opts,
+            pageOpts;
+
+        try {
+            pageOpts = pageOptions;
+        } catch (e) {
+            pageOpts = undefined;
+        }
+
+        var extraData = {};
+
+        var overrideExtraData = function (extraDataKey, optionsKey) {
+            if ($.isArray(options)) {
+                // extra overrides 
+                options = $.grep(options, function (option, i) {
+                    if (option.name === optionsKey) {
+                        extraData[extraDataKey] = option.value;
+                        return false;
+                    }
+                    return true;
+                });
+            } else if (options && !$.isUndefined(options[optionsKey])) {
+                extraData[extraDataKey] = options[optionsKey];
+                delete options[optionsKey];
+            }
+        };
+
+        if ($.isArray(options)) {
+            opts = options;
+            opts.push({ name: 'windowLocation', value: extraData.windowLocation });
+        } else {
+            opts = $.extend(extraData, options);
+        }
+
+        return $.ajax({
+            type: 'POST',
+            url: url,
+            data: opts,
+            headers: headers,
+            success: function (json) {
+                if (!$.isUndefined(successcallback) && successcallback !== null) {
+                    successcallback.call(this, json);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                if (XMLHttpRequest !== null && XMLHttpRequest !== undefined && (XMLHttpRequest.readyState === 0 || XMLHttpRequest.Status)) return;
+
+                if ($.isFunction(errorcallback)) {
+                    errorcallback.call(this, XMLHttpRequest, textStatus, errorThrown, url, opts);
+                }
+            },
+            dataType: 'json',
+            context: context
+        });
     };
 
     function fetch(url, options, headers) {
@@ -152,4 +220,4 @@
         }
     });
 
-})(Guyu, window.jQuery);
+})(Guyu, jQuery);

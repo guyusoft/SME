@@ -252,10 +252,10 @@ if (typeof Guyu === "undefined") {
                 // buttons
                 this.initializeButtons();
 
-                this.footer_center = $(document.createElement('li')).attr({ 'id': 'lightbox_footer_center', 'class': 'float_left' });
+                this.footer_center = $(document.createElement('li')).attr({ 'id': 'lightbox_footer_center', 'class': 'left' });
                 this.footer_buttons = $(document.createElement('ul')).attr({ 'id': 'lightbox_footer' }).append(this.footer_center);
                 this.footer_nobuttons = $(document.createElement('ul')).attr({ 'id': 'lightbox_footer_nobuttons' })
-                    .append($(document.createElement('li')).attr({ 'id': 'lightbox_footer_nobuttons_center' }).addClass('float_left'));
+                    .append($(document.createElement('li')).attr({ 'id': 'lightbox_footer_nobuttons_center' }).addClass('left'));
 
                 this.container.append(this.footer_buttons);
                 this.container.append(this.footer_nobuttons);
@@ -326,7 +326,7 @@ if (typeof Guyu === "undefined") {
             createButton: function (buttonType, src, tooltip) {
                 if (buttonType === null || buttonType === undefined) return;
 
-                var button = $(document.createElement('input')).attr({ 'type': 'image', src: '/SOLV2/Images/transparent.gif' }).addClass('link float_right').val(buttonType);
+                var button = $(document.createElement('input')).attr({ 'type': 'image', src: '/SOLV2/Images/transparent.gif' }).addClass('link right').val(buttonType);
                 if (tooltip) { button.prop('title', tooltip); }
 
                 // if not a custom button then use the standard background button image from the sprites
@@ -355,7 +355,7 @@ if (typeof Guyu === "undefined") {
             // create a button with text and a layout style 
             // Style: btn-primary (blue), btn-default (gray), btn-success (green), btn-warning (orange), btn-danger (red)
             createBaseButton: function (text, style) {
-                return $(document.createElement('button')).addClass('link float_right btn btn-lightbox').addClass(style).html(text);
+                return $(document.createElement('button')).addClass('link right btn btn-lightbox').addClass(style).html(text);
             },
 
             // add click events to the button based on the button type
