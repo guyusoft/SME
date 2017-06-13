@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{233151D1-9105-4141-91D7-11783EFCDAA8}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		guyu.ajax.js = guyu.ajax.js
 		guyu.js = guyu.js
 		guyu.lightbox.js = guyu.lightbox.js
