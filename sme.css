@@ -168,7 +168,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     .top-navigation .navigation-section li {
         float: left;
         margin-right: 5px;
-        padding-right:5px;
+        padding-right: 5px;
     }
 
 .top-navigation .first {
@@ -176,8 +176,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border-left: 0;
 }
 
-.top-navigation .end{
-    width:auto;
+.top-navigation .end {
+    width: auto;
 }
 
     .top-navigation .end ul {
@@ -189,13 +189,47 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     }
 
 /*banner*/
-.banner .area{
+.banner .area {
     height: 100px;
-    margin-top:30px;
-    clear:both;
+    margin-top: 30px;
+    clear: both;
 }
 
-.banner .area img{
-    height:100px;
-    overflow:hidden;
+    .banner .area img {
+        height: 100px;
+        overflow: hidden;
+    }
+
+/*top-news*/
+.top-news .area {
+    height: 550px;
+    margin-top: 20px;
+    clear: both;
+}
+
+.top-news .main {
+    width: 900px;
+}
+
+.top-news .main-left {
+    width:400px;
+}
+
+.top-news .main-left .images-news{
+    height:200px;
+}
+
+    .top-news .main-left .images-news li{
+        float:left;
+    }
+
+    .top-news .main-left .images-news li img{
+        height:80px;
+        width:180px;
+        overflow:hidden;
+    }
+
+.top-news .sidebar {
+    margin-right: 25px;
+    width: 240px;
 }
