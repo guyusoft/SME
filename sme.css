@@ -147,7 +147,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
         }
 
 .top-navigation .area {
-    height: 45px;
+    height: 65px;
     margin-top: 20px;
     border-top: 2px #fdd000 solid;
 }
@@ -191,12 +191,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 /*banner*/
 .banner .area {
     height: 100px;
-    margin-top: 30px;
+    margin-top: 20px;
     clear: both;
 }
 
     .banner .area img {
         height: 100px;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -211,25 +212,105 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 900px;
 }
 
-.top-news .main-left {
-    width:400px;
+.top-news .main-left .images-news {
+    height: 200px;
 }
 
-.top-news .main-left .images-news{
-    height:200px;
-}
-
-    .top-news .main-left .images-news li{
-        float:left;
+    .top-news .main-left .images-news li {
+        float: left;
+        margin-right: 8px;
     }
 
-    .top-news .main-left .images-news li img{
-        height:80px;
-        width:180px;
-        overflow:hidden;
+        .top-news .main-left .images-news li img {
+            height: 103px;
+            width: 154px;
+            overflow: hidden;
+        }
+
+.top-news .main-left .channel-news {
+    clear: both;
+    height: 400px;
+    margin-top: 20px;
+}
+
+    .top-news .main-left .channel-news .prompt a {
+        font-size: 14px;
     }
 
-.top-news .sidebar {
-    margin-right: 25px;
-    width: 240px;
+    .top-news .main-left .channel-news .change a {
+        font-size: 12px;
+        color: #539ff3;
+        float: right;
+        width: 68px;
+        height: 22px;
+        line-height: 22px;
+        border: 1px #fff solid;
+        text-align: right;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .top-news .main-left .channel-news .prompt:before {
+        float: left;
+        content: "";
+        background: #fdd000;
+        width: 4px;
+        height: 14px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 6px 7px 0 0;
+        border-radius: 2px;
+    }
+
+    .top-news .main-left .channel-news .title {
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+.top-news .channel {
+    border: 1px #ddd solid;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom:20px;
+    clear:both;
 }
+
+    .top-news .channel a {
+        font-size: 12px;
+    }
+
+.top-news .channel-source span {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.top-news .channel-source a {
+    margin-left: 15px;
+}
+
+.top-news .channel-source img {
+    width: 50px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.top-news .channel-source .left {
+    margin-top: 10px;
+    height: 40px;
+    float: left;
+}
+
+.top-news .channel-source p {
+    padding-left:80px;
+}
+
+.top-news .channel-top-news {
+    margin-left:20px;
+    list-style-type:disc;
+}
+
+    .top-news .channel-top-news a:hover {
+        color:red;
+    }
