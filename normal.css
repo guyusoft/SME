@@ -7,3 +7,18 @@ a {
     color: #191919;
 }
 
+.header{
+    background-color:#000;
+}
+
+.header a{
+    color:#fff;
+}
+
+.search .search-area .search-button {
+    background: #fdd000;
+}
+
+.search .welcome .welcome-link .second-line a:hover {
+    color:#f24e4e;
+}

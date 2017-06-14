@@ -5,6 +5,13 @@
     -webkit-text-size-adjust: 100%;
 }
 
+body {
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.667;
+    font-family: Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",simsun,sans-serif;
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, time, tt, u, ul, var, video {
     border: 0;
     margin: 0;
@@ -24,19 +31,8 @@ a {
     text-decoration: none;
 }
 
-header {
-    min-width: 1180px;
-}
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
-}
-
-body {
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: 1.667;
-    font-family: Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",simsun,sans-serif;
 }
 
 .left {
@@ -47,8 +43,159 @@ body {
     float: right;
 }
 
-/*The width of content*/
 .area {
     width: 1180px;
     margin: 0 auto;
+}
+
+.section {
+    min-width: 1180px;
+}
+
+/*Header*/
+.header .area {
+    height: 27px;
+}
+
+.header ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+    .header ul li a {
+        font-size: 14px;
+    }
+
+/*Logo*/
+.search .area {
+    margin-top: 17px;
+    height: 75px;
+}
+
+.search .logo {
+    float: left;
+    height: 75px;
+}
+
+    .search .logo img {
+        width: 160px;
+        height: 75px;
+        overflow: hidden;
+    }
+
+.search .search-area {
+    float: left;
+    height: 75px;
+}
+
+    .search .search-area .search-text {
+        width: 650px;
+        height: 40px;
+        margin-left: 15px;
+        margin-top: 12px;
+        border-right: 0;
+        border: 1px #ddd solid;
+        border-radius: 1px 0 0 1px;
+    }
+
+    .search .search-area .search-button {
+        width: 80px;
+        height: 44px;
+        display: inline-block;
+        float: right;
+        margin-top: 12px;
+    }
+
+        .search .search-area .search-button i {
+            position: relative;
+            margin-left: 30px;
+            margin-top: 12px;
+        }
+
+.search .welcome {
+    width: 240px;
+    border-left: 1px #ddd solid;
+    border-radius: 1px 0 0 1px;
+    height: 75px;
+}
+
+    .search .welcome .welcome-logo img {
+        width: 36px;
+        height: 36px;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .search .welcome .welcome-link {
+        margin-left: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+        .search .welcome .welcome-link .first-line a {
+            font-size: 14px;
+            color: #fd5900;
+        }
+
+        .search .welcome .welcome-link .second-line li {
+            float: left;
+        }
+
+        .search .welcome .welcome-link .second-line a {
+            margin-right: 5px;
+        }
+
+.top-navigation .area {
+    height: 45px;
+    margin-top: 20px;
+    border-top: 2px #fdd000 solid;
+}
+
+.top-navigation .navigation-section {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 13px;
+    border-left: 1px #efefef solid;
+    height: 50px;
+}
+
+    .top-navigation .navigation-section ul {
+        width: 240px;
+        height: 35px;
+    }
+
+    .top-navigation .navigation-section li {
+        float: left;
+        margin-right: 5px;
+        padding-right:5px;
+    }
+
+.top-navigation .first {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.top-navigation .end{
+    width:auto;
+}
+
+    .top-navigation .end ul {
+        width: auto;
+    }
+
+    .top-navigation .end li .end {
+        width: auto;
+    }
+
+/*banner*/
+.banner .area{
+    height: 100px;
+    margin-top:30px;
+    clear:both;
+}
+
+.banner .area img{
+    height:100px;
+    overflow:hidden;
 }
