@@ -50,15 +50,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .section {
     min-width: 1180px;
+    clear: both;
 }
 
 /*Header*/
 .header .area {
     height: 27px;
+    overflow: hidden;
 }
 
 .header ul li {
     float: left;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -70,10 +73,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .search .area {
     margin-top: 17px;
     height: 75px;
+    overflow: hidden;
 }
 
 .search .logo {
     float: left;
+    display: inline-block;
     height: 75px;
 }
 
@@ -85,6 +90,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .search .search-area {
     float: left;
+    display: inline-block;
     height: 75px;
 }
 
@@ -146,53 +152,57 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
             margin-right: 5px;
         }
 
-.top-navigation .area {
+.top-navigation {
     height: 65px;
+    overflow: hidden;
     margin-top: 20px;
-    border-top: 2px #fdd000 solid;
 }
 
-.top-navigation .navigation-section {
-    margin-top: 10px;
-    font-size: 14px;
-    padding-left: 13px;
-    border-left: 1px #efefef solid;
-    height: 50px;
-}
-
-    .top-navigation .navigation-section ul {
-        width: 240px;
-        height: 35px;
+    .top-navigation .area {
+        border-top: 2px #fdd000 solid;
     }
 
-    .top-navigation .navigation-section li {
-        float: left;
-        margin-right: 5px;
-        padding-right: 5px;
+    .top-navigation .navigation-section {
+        margin-top: 10px;
+        font-size: 14px;
+        padding-left: 13px;
+        border-left: 1px #efefef solid;
+        height: 60px;
     }
 
-.top-navigation .first {
-    padding-left: 0;
-    border-left: 0;
-}
+        .top-navigation .navigation-section ul {
+            width: 240px;
+            height: 35px;
+        }
 
-.top-navigation .end {
-    width: auto;
-}
+        .top-navigation .navigation-section li {
+            float: left;
+            margin-right: 5px;
+            padding-right: 5px;
+        }
 
-    .top-navigation .end ul {
+    .top-navigation .first {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .top-navigation .end {
         width: auto;
     }
 
-    .top-navigation .end li .end {
-        width: auto;
-    }
+        .top-navigation .end ul {
+            width: auto;
+        }
+
+        .top-navigation .end li .end {
+            width: auto;
+        }
 
 /*banner*/
-.banner .area {
+.banner {
     height: 100px;
+    overflow: hidden;
     margin-top: 20px;
-    clear: both;
 }
 
     .banner .area img {
@@ -201,30 +211,28 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
         overflow: hidden;
     }
 
-/*top-news*/
-.top-news .area {
-    height: 550px;
+.top-news {
+    height: 920px;
+    overflow: hidden;
     margin-top: 20px;
-    clear: both;
 }
 
 .top-news-images {
-    height:220px;
+    height: 220px;
 }
 
-.top-news-images li {
-    float: left;
-    margin-right: 8px;
-}
-
-    .top-news-images li img {
-        height: 103px;
-        width: 154px;
-        overflow: hidden;
+    .top-news-images li {
+        float: left;
+        margin-right: 8px;
     }
 
+        .top-news-images li img {
+            height: 103px;
+            width: 154px;
+            overflow: hidden;
+        }
+
 .top-news-channel {
-    clear: both;
     height: 560px;
     margin-top: 20px;
 }
@@ -269,7 +277,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border-radius: 2px;
     margin-right: 5px;
     margin-bottom: 20px;
-    clear: both;
 }
 
     .top-news-channel-index a {
@@ -351,58 +358,112 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
         margin-top: 10px;
         color: #999;
     }
+
 .top-news-link {
-    width:440px;
-    height:760px;
+    width: 440px;
+    height: 760px;
 }
 
-.top-news-link a {
-    margin-left: 15px;
+    .top-news-link a {
+        margin-left: 15px;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+        .top-news-link a:hover {
+            color: red;
+        }
+
+        .top-news-link a:before {
+            float: left;
+            content: "";
+            background: #ccc;
+            width: 4px;
+            height: 4px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 13px 10px 0 0;
+            border-radius: 2px;
+        }
+
+    .top-news-link .top {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+
+.top-news-ad img {
+    width: 820px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.channel-news {
+    height: 540px;
+}
+
+.channel-news-title a {
     font-size: 14px;
-    display: block;
-    margin-bottom: 3px;
+    cursor: pointer;
 }
 
-    .top-news-link a:hover {
-        color: red;
+
+.channel-news-title {
+    position: relative;
+    top: 10px;
+    left: 0;
+    border-bottom: 2px #fdd000 solid;
+    background: #fff;
+    position: relative;
+}
+
+    .channel-news-title .category {
+        height: 40px;
+        width:100px;
     }
 
-    .top-news-link a:before {
-        float: left;
-        content: "";
-        background: #ccc;
-        width: 4px;
-        height: 4px;
-        overflow: hidden;
-        display: inline-block;
-        margin: 13px 10px 0 0;
-        border-radius: 2px;
+        .channel-news-title .category a {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100px;
+            padding-left: 20px;
+        }
+
+            .channel-news-title .category a:before {
+                content: "";
+                background: red;
+                width: 100px;
+                height: 3px;
+                overflow: hidden;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                opacity: 1;
+            }
+
+    .channel-news-title .more {
+        position:relative;
+        height:20px;
+        float:right;
+        bottom:30px;
     }
 
-.top-news-link .top {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.top-news-ad {
-    clear: both;
-}
-
-    .top-news-ad img {
-        width:820px;
-        height:100px;
-        overflow:hidden;
+    .channel-news-title .more a{
+        padding-right:20px;
+        color:#999;
     }
 
-.channel-news .area {
-    height:600px;
-    clear:both;
+.channel-news-detail {
+   position:relative;
+   top:20px;
+   left:0;
 }
-
-.channel-news .right .top-news-news {
-    width:350px;
-}
-
-.channel-news .right .top-news-link {
-    width:350px;
+.channel-news .sidebar {
+    width:370px;
+    overflow:hidden;
+    position:relative;
+    top:-35px;
 }
