@@ -487,5 +487,5 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 
     .footer .area {
-        border-top: 2px #fdd000 solid;
+        border: 1px #ddd solid;
     }
