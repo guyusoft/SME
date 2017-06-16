@@ -6,8 +6,8 @@ $(document).ready(function () {
     //    messageBoxType: 'warning'
     //});
 
-    var a = Guyu.fetch('http://localhost/api/agencies/1', { body: {}});
-    a.then(function (response) {
-        var a = response;
-    })
+    //var a = Guyu.fetch('http://localhost/api/agencies/1', { body: {}});
+    //a.then(function (response) {
+    //    var a = response;
+    //})
 });
