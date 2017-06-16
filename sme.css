@@ -483,9 +483,55 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 
 .footer {
-    height: 200px;
+    height: 220px;
+    margin-bottom:20px;
 }
 
     .footer .area {
         border: 1px #ddd solid;
+        margin: 60px auto 0;
+        height: 200px;
     }
+
+.footer-image-link {
+    margin-top: 20px;
+    height:30px;
+}
+
+    .footer-image-link li {
+        float: left;
+        width: 110px;
+        line-height: 14px;
+        margin-left: 20px;
+    }
+
+    .footer-image-link img {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .footer-image-link a {
+        font-size: 12px;
+    }
+
+
+.license {
+    font-size: 12px;
+    border-top: 1px #ddd solid;
+    margin-top: 10px;
+    margin-bottom:10px;
+    height:120px;
+}
+
+.license div{
+    margin-left:35px;
+    margin-top:20px;
+}
+
+.copyright
+{
+    clear:both;
+    font-size:12px;
+    text-align:center;
+    margin-top:30px;
+}
